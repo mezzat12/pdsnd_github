@@ -17,7 +17,7 @@ def get_filters():
         (str) month - name of the month to filter by, or "all" to apply no month filter
         (str) day - name of the day of week to filter by, or "all" to apply no day filter
     """
-    print('Hello! Let\'s explore some US bikeshare data!')
+    print('Hello! Welcome to US BikeShare data!')
     month = "all"
     day = "all"
     city = "none"
@@ -101,7 +101,7 @@ def time_stats(df):
     start_time = time.time()
 
     common_month = df['month'].mode()[0]
-    print("Most common Month is:",common_month)
+    print("The most common Month is:",common_month)
     common_day = df['day_of_week'].mode()[0]
     print("Most common Day is:",common_day)
     common_hour = df['hour'].mode()[0]
